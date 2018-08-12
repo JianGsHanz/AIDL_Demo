@@ -1,7 +1,4 @@
 # AIDL_Demo
-仅供参考，实现客户服务端简单通信，传基本数据类型及引用类型数据
-
-#遇到的问题
 首先AIDL传对象
 1.创建bean，实现Parcelable
 2.app/main/aidl相同目录下创建同名aidl文件
