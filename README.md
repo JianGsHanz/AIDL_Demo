@@ -1,9 +1,9 @@
 # AIDL_Demo
-首先AIDL传对象\<br>
-1.创建bean，实现Parcelable\<br>
-2.app/main/aidl相同目录下创建同名aidl文件\<br>
-例如：\<br>
-package com.zyh.aidl;\<br>
+首先AIDL传对象<br>
+1.创建bean，实现Parcelable<br>
+2.app/main/aidl相同目录下创建同名aidl文件<br>
+例如：<br>
+package com.zyh.aidl;<br>
 \<br>
 parcelable Person;\<br>
 //interface Person {\<br>
