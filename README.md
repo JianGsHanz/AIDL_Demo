@@ -4,7 +4,7 @@
 2.app/main/aidl相同目录下创建同名aidl文件<br>
 例如：<br>
 package com.zyh.aidl;<br>
-<br>
+//下面这段很重要<br>
 parcelable Person;<br>
 //interface Person {<br>
 //<br>
