@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         Button bt = findViewById(R.id.bt);
 
         Intent intent = new Intent("com.zyh.MyService");
+        intent.setPackage("com.zyh.serverdemo");
         bindService(intent,conn,BIND_AUTO_CREATE);
 
         bt.setOnClickListener(new View.OnClickListener() {
