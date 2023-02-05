@@ -4,6 +4,7 @@ import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
 import android.os.RemoteException;
+import android.util.Log;
 
 import com.zyh.aidl.Person;
 
@@ -26,6 +27,7 @@ public class MyService extends Service {
     IMyAidl.Stub stub = new IMyAidl.Stub() { //具体实现
         @Override
         public void addPerson(Person p) throws RemoteException {
+            p.setmName("改变后的名字");
             mPersons.add(p);
         }
 

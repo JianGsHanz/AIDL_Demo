@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                 Person person = new Person("AIDL");
                 try {
                     myAidl.addPerson(person);
-                    tv.setText(myAidl.getList().toString()+"\n sum = " +myAidl.sum(3,5));
+                    tv.setText(myAidl.getList().toString()+"\n sum = " +myAidl.sum(3,5) + "inout update:"+person.getmName());
                 } catch (RemoteException e) {
                     e.printStackTrace();
                 }

@@ -29,6 +29,10 @@ public class Person implements Parcelable{
         dest.writeString(this.mName);
     }
 
+    public void readFromParcel(Parcel in) {
+        this.mName = in.readString();
+    }
+
     protected Person(Parcel in) {
         this.mName = in.readString();
     }
